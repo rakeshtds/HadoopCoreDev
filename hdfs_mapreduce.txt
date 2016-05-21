@@ -2,15 +2,18 @@
 #Login as root or any sudoer user
 #pick unique username, you can validate using "id rakeshtds" command 
 #run useradd command as below to create user if required
-useradd rakeshtds -g hadoop
+useradd ssukoor -g hadoop
 #sudo to osuser hdfs
 sudo su - hdfs
-#create hdfs directory with name of os user rakeshtds
-hadoop fs -mkdir /user/rakeshtds
+#create hdfs directory with name of os user ssukoor
+hadoop fs -mkdir /user/ssukoor
 #change 
-hadoop fs -chown rakeshtds:rakeshtds /user/rakeshtds
+hadoop fs -chown ssukoor:ssukoor /user/ssukoor
 exit
-sudo su - rakeshtds
+sudo su - ssukoor
+
+ssukoor, vkumar, pbirla
+
 
 #2. Copy data to hdfs; eg: largedeck.txt
 #scp or ftp from your PC to gateway/client node in the hadoop cluster
